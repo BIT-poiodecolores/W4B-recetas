@@ -1,0 +1,99 @@
+body{
+   /* Propiedades en general */
+    font-family: 'Roboto', sans-serif;
+    /* Dar negrilla a los textos, más grosor*/
+    font-weight:300 ;
+/* considera el ancho y el alto de la caja , respeta ese ancho. Añade el padding y el border al ancho, no alteren el tamaño general del body  */
+    box-sizing: border-box;
+    /* maximo de ancho */
+    max-width: 1000px;
+
+ /* forma 1 de ajustar propiedades */
+    /* margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto; */
+    
+    /* forma 2 */
+    margin:0 auto;
+
+/* Va es como las manecillas de reloj- arriba - derecha - abajo - izquierda */
+    /* margin:10px 20px 40px 10px; */
+
+
+}
+
+.img-logo{
+    width: 400px;
+    display: block;
+    margin:0 auto;
+
+}
+
+
+nav{
+    font-family: 'Overlock', cursive;
+    /* tamaño de letra-fuente */
+    font-size:20px ;
+    /* Esta propiedad sirve para alinear textos, izq, derecha, justify, center */
+    text-align: center;
+    padding: 10px 0px 20px 0px;
+
+
+}
+
+.barradenavegacion{
+    /* flexbox, vamos a poder utilizar propiedades de flexbox o ese diseño flexible */
+    display: inline-flex; 
+    /* quitar las viñetas de los elementos de la lista */
+list-style: none;
+/* opcional por si quiero que se altere el padding ni el margin */
+margin: 0;
+padding: 0;
+}
+
+
+/* Selector descendiente */
+nav ul li{
+    list-style-type: none;
+    transition:0.8s all ;
+    /*prefijos*/-webkit-transition:0.8s all ;
+    -moz-transition:0.8s all ;
+    -ms-transition:0.8s all ;
+    -o-transition:0.8s all ;
+    -webkit-transition:0.8s all ;
+}
+
+
+
+nav li{
+    border-right: 1px solid #C00;
+    padding:20px 20px ;
+}
+
+/* evento: Cuando el usuario hace un accion en mi página, un click, pasa mouse el mouse encima, dobleclick */
+/* hover:cuando paso mouse encima */
+nav ul li:hover{
+
+ background-color: #f8ead1;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
